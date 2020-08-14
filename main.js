@@ -63,8 +63,8 @@ function handleClick() {
   });
 }
 
-// handleClick();
-handleClicks();
+handleClick();
+// handleClicks();
 document.addEventListener('DOMContentLoad',hideErrorModel());
 
 
