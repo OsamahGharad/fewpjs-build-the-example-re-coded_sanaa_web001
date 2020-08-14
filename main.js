@@ -13,7 +13,7 @@ function handleClicks(){
   document.addEventListener('click',function(e){
     let target=e.target;
     if(target.classList.contains('like-glyph')){
-      if(target.innerText=EMPTY_HEART){
+      if(target.innerText==EMPTY_HEART){
         mimicServerCall().then(function(response){
         target.innerText=FULL_HEART;
         target.classList.add('activated-heart');
