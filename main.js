@@ -25,10 +25,10 @@ function handleClicks(){
           modal.classList.add('hidden');
         },5000);
       })
+      }else if(target.innerText==FULL_HEART){
+        target.innerText = EMPTY_HEART;
+        target.classList.remove('activated-heart')
       }
-    }else if(target.innerText==FULL_HEART){
-      target.innerText = EMPTY_HEART;
-      target.classList.remove('activated-heart')
     }
     else {
 
