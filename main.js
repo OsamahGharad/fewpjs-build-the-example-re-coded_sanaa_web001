@@ -4,6 +4,10 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+function hideErrorModel(){
+  const modal=document.getElementById('modal');
+  modal.classList.add('hidden');
+}
 
 
 
