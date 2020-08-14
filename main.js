@@ -13,9 +13,9 @@ function handleClicks(){
   document.addEventListener('click',function(e){
     let target=e.target;
     if(target.classList.contains('like-glyph')){
-      if(target.innerTextL="EMPTY_HEART"){
+      if(target.innerText=EMPTY_HEART){
         mimicServerCall().then(function(response){
-        target.innerText="FULL_HEART";
+        target.innerText=FULL_HEART;
         target.classList.add('activated-heart');
       }).catch(function(response){
         let modal=document.getElementById('modal');
@@ -26,8 +26,8 @@ function handleClicks(){
         },5000);
       })
       }
-    }else if(target.innerHTML="FULL_HEART"){
-      target.innerHTML="EMPTY_HEART";
+    }else if(target.innerText=FULL_HEART){
+      target.innerText=EMPTY_HEART;
       target.classList.removing('activated-heart');
     }
   })
