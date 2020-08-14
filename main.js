@@ -33,35 +33,7 @@ function handleClicks(){
 
   })
 }
-function handleClick() {
-  document.addEventListener('click', function(e) {
-   var target = e.target;
-   if(target.classList.contains('like-glyph')) {
-     if(target.innerText == EMPTY_HEART) {
-       mimicServerCall().then(function(response) {
-         target.innerText = FULL_HEART;
-         target.classList.add('activated-heart');
-       }).catch(function(response) {
-         let modal = document.getElementById('modal')
-         modal.classList.remove('hidden');
-         modal.innerText = response;
-         window.setTimeout(function() {
-           modal.classList.add('hidden')
-         }, 5000);
-       })
-     } else if (target.innerText == FULL_HEART) {
-       target.innerText = EMPTY_HEART;
-       target.classList.remove('activated-heart')
-     } else {
 
-     };
-   } else {
-
-   };
-  });
-}
-
-// handleClick();
 handleClicks();
 document.addEventListener('DOMContentLoad',hideErrorModel());
 
