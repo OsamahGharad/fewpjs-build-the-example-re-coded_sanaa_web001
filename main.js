@@ -32,9 +32,9 @@ function handleClicks(){
     }
   })
 }
-
-document.addEventListener('DOMContentLoad',hideErrorModel());
 handleClicks();
+document.addEventListener('DOMContentLoad',hideErrorModel());
+
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
