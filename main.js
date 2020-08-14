@@ -10,7 +10,7 @@ function hideErrorModel(){
 }
 
 
-
+document.addEventListener('DOMContentLoad',hideErrorModel());
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
