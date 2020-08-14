@@ -13,14 +13,14 @@ function handleClicks(){
   document.addEventListener('click',function(e){
     let target=e.target;
     if(target.classList.contains('like-glyph')){
-      if(target.innerHTML="EMPTY_HEART"){
+      if(target.innerTextL="EMPTY_HEART"){
         mimicServerCall().then(function(response){
-        target.innerHTML="FULL_HEART";
+        target.innerText="FULL_HEART";
         target.classList.add('activated-heart');
       }).catch(function(response){
         let modal=document.getElementById('modal');
         modal.classList.Remove('hidden');
-        model.innerHTML=response;
+        modal.innerHTML=response;
         window.setTimeout(function(){
           modal.classList.add('hidden');
         },5000);
