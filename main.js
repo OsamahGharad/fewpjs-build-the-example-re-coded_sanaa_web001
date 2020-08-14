@@ -19,7 +19,7 @@ function handleClicks(){
         target.classList.add('activated-heart');
       }).catch(function(response){
         let modal=document.getElementById('modal');
-        modal.classList.Remove('hidden');
+        modal.classList.remove('hidden');
         modal.innerHTML=response;
         window.setTimeout(function(){
           modal.classList.add('hidden');
