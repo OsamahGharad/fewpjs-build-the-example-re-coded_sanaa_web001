@@ -34,6 +34,8 @@ function handleClicks(){
 }
 
 document.addEventListener('DOMContentLoad',hideErrorModel());
+handleClicks();
+
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
