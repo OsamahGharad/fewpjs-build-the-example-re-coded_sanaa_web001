@@ -30,6 +30,9 @@ function handleClicks(){
       target.innerText=EMPTY_HEART;
       target.classList.removing('activated-heart');
     }
+    else {
+
+    };
   })
 }
 function handleClick() {
