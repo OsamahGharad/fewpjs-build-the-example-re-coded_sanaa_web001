@@ -30,7 +30,7 @@ function handleClicks(){
         target.classList.remove('activated-heart')
       }
     }
-    
+
   })
 }
 function handleClick() {
