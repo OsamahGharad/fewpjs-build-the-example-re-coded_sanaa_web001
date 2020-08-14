@@ -28,7 +28,7 @@ function handleClicks(){
       }
     }else if(target.innerText==FULL_HEART){
       target.innerText=EMPTY_HEART;
-      target.classList.removing('activated-heart');
+      target.classList.remove('activated-heart');
     }
     else {
 
